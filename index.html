@@ -16,12 +16,12 @@
 
             <div class="col py-4 text-center   mx-2">
                 <h5 class="ms_color_pink">Nome Cognome</h5>
-                <input class="ms_border_pink my-3 rounded" type="text" name="" id="textName">
+                <input class="ms_border_pink my-3 rounded" type="text" name="" id="nome">
             </div>
             
             <div class="col py-4 d-flex flex-column text-center  mx-2 ">
                 <h5 class="ms_color_pink">Km da percorrere</h5>
-                <input class="ms_border_pink w-25  rounded mx-auto mt-3 mb-5" type="number" name="" min="1" id="">
+                <input class="ms_border_pink w-25  rounded mx-auto mt-3 mb-5" type="number" name="" min="1" id="chilometri">
                 <div class="ms_btn_box ">
                     <div id="genera" class="btn ms_color_pink ms_bg-grey me-3 border-2 border-secondary fw-bold">
                         Genera
@@ -37,11 +37,11 @@
 
             <div class="col py-4 text-center   mx-2 ">
                 <h5 class="ms_color_pink">Fascia d'età</h5>
-                <select class="my-3 rounded ms_border_pink py-1 " name="" id="">
-                    <option value="">Seleziona un'opzione</option>
-                    <option value="">Maggiorenne</option>
-                    <option value="">Minorenne</option>
-                    <option value="">Over 65</option>
+                <select class="my-3 rounded ms_border_pink py-1 " name="" id="eta">
+                    <option value="Biglietto Standard">Seleziona un'opzione</option>
+                    <option value="Maggiorenne">Maggiorenne</option>
+                    <option value="Minorenne">Minorenne</option>
+                    <option value="65+">Over 65</option>
                 </select>
             </div>
 
@@ -57,27 +57,27 @@
                     
                     <div class="col-3 bg-secondary">
                         <h3 class=" text-black">NOME PASSEGGERO:</h3>
-                        <h3 id="nome-passeggero" class="text-black"></h3>
+                        <h3 id="nome_output" class="text-black"></h3>
                     </div>
                     
                     <div class="col d-flex flex-column justify-content-between ps-3 p-2">
                         <h4 class="mb-5">Offerta</h4>
-                        <h4 class="fw-light" >Biglietto Standard</h4>
+                        <h4 id="eta_output" class="fw-light" >Biglietto Standard</h4>
                     </div>
         
                     <div class="col text-center d-flex flex-column justify-content-between p-2">
                         <h4 class="mb-5">Carrozza</h4>
-                        <h4 class="fw-light" >Biglietto Standard</h4>
+                        <h4 id="carrozza_output" class="fw-light" >Biglietto Standard</h4>
                     </div>
         
                     <div class="col text-center d-flex flex-column justify-content-between p-2">
                         <h4 class="mb-5">Codice CP</h4>
-                        <h4 class="fw-light" >Biglietto Standard</h4>
+                        <h4 id="cp_output" class="fw-light" >Biglietto Standard</h4>
                     </div>
         
                     <div class="col text-center d-flex flex-column justify-content-between p-2">
                         <h4 class="mb-5">Costo Biglietto</h4>
-                        <h4 class="fw-light" >Biglietto Standard</h4>
+                        <h4 id="costo_output" class="fw-light" >Biglietto Standard</h4>
                     </div>
         
                 </div>
