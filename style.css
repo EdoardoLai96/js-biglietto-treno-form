@@ -62,8 +62,6 @@ display: flex;
 }
  */
 
-body{
-}
 
 .debug-mid{
     height: 800px;
@@ -81,4 +79,19 @@ body{
     height: 100px;
 }
 
+.ms_color_pink{
+    color: #b91450;
+}
+
+.ms_bg-color_pink{
+    background-color: #b91450;
+}
+
+.ms_bg-grey{
+    background-color: #b6a2a9;
+}
+
+.ms_border_pink{
+    border-color: #b91450;
+}
 

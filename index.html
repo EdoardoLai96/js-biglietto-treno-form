@@ -9,40 +9,80 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body class="d-flex">
-    <div class="container debug-mid bg-primary "> 
-        <h2></h2>
-        <div class="row bg-warning">
-            <div class="col text-end bg-danger debug-short mx-2">
-                <h4>Nome Cognome</h4>
-                <input type="text" name="" id="">
+<body>
+    <div class="container-fluid ms_bg-color_pink px-5 py-3 align-items-center h-100"> 
+        <h2 class="text-center text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <div class="row bg-light rounded-3">
+
+            <div class="col py-4 text-center   mx-2">
+                <h5 class="ms_color_pink">Nome Cognome</h5>
+                <input class="ms_border_pink my-3 rounded" type="text" name="" id="textName">
             </div>
             
-            <div class="col d-flex flex-column text-center bg-danger debug-short mx-2 ">
-                <h4>Nome Cognome</h4>
-                <input type="number" name="" id="">
+            <div class="col py-4 d-flex flex-column text-center  mx-2 ">
+                <h5 class="ms_color_pink">Km da percorrere</h5>
+                <input class="ms_border_pink w-25  rounded mx-auto mt-3 mb-5" type="number" name="" min="1" id="">
                 <div class="ms_btn_box ">
-                    <div class="btn btn-primary">
-
+                    <div id="genera" class="btn ms_color_pink ms_bg-grey me-3 border-2 border-secondary fw-bold">
+                        Genera
                     </div>
 
-                    <div class="btn btn-primary">
-
+                    <div class="btn ms_color_pink ms_bg-grey border-2 border-secondary fw-bold">
+                        Annulla
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="col text-start bg-danger debug-short mx-2 ">
-                <h4>Nome Cognome</h4>
-                <select type="text" name="" id="">
-
+            <div class="col py-4 text-center   mx-2 ">
+                <h5 class="ms_color_pink">Fascia d'età</h5>
+                <select class="my-3 rounded ms_border_pink py-1 " name="" id="">
+                    <option value="">Seleziona un'opzione</option>
+                    <option value="">Maggiorenne</option>
+                    <option value="">Minorenne</option>
+                    <option value="">Over 65</option>
+                </select>
             </div>
 
         </div>
-        <h2></h2>
-        <div class="row">
+        <h2 class="text-center text-white">IL TUO BIGLIETTO</h2>
+        <div class="row  bg-light rounded-3">
+            <div class="col px-5 py-4">
+                <div class="row">
+                    <h3 class="fw-bold" >DETTAGLIO PASSEGGERI</h3>
+                </div>
+                
+                <div class="row  border border-start-0 border-end-0 border-3 border-dark">
+                    
+                    <div class="col-3 bg-secondary">
+                        <h3 class=" text-black">NOME PASSEGGERO:</h3>
+                        <h3 id="nome-passeggero" class="text-black"></h3>
+                    </div>
+                    
+                    <div class="col d-flex flex-column justify-content-between ps-3 p-2">
+                        <h4 class="mb-5">Offerta</h4>
+                        <h4 class="fw-light" >Biglietto Standard</h4>
+                    </div>
+        
+                    <div class="col text-center d-flex flex-column justify-content-between p-2">
+                        <h4 class="mb-5">Carrozza</h4>
+                        <h4 class="fw-light" >Biglietto Standard</h4>
+                    </div>
+        
+                    <div class="col text-center d-flex flex-column justify-content-between p-2">
+                        <h4 class="mb-5">Codice CP</h4>
+                        <h4 class="fw-light" >Biglietto Standard</h4>
+                    </div>
+        
+                    <div class="col text-center d-flex flex-column justify-content-between p-2">
+                        <h4 class="mb-5">Costo Biglietto</h4>
+                        <h4 class="fw-light" >Biglietto Standard</h4>
+                    </div>
+        
+                </div>
+
+            </div>
 
         </div>
 
@@ -118,5 +158,6 @@
 
 
     </div>   -->
+    <script src="main.js"> </script>
 </body>
 </html>
