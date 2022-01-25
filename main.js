@@ -49,14 +49,14 @@ if (eta.value == "Biglietto Standard"){
 }
 
 else if (eta.value == "Minorenne"){
-    costo_output.innerHTML = (prezzo * 0.8).toFixed(2) ;
+    costo_output.innerHTML = (prezzo * 0.8).toFixed(2) + "€";
     eta.value = "Biglietto Standard";
 
 } else if (eta.value == "65+") {
-    costo_output.innerHTML = (prezzo * 0.6).toFixed(2) ;
+    costo_output.innerHTML = (prezzo * 0.6).toFixed(2) + "€" ;
     eta.value = "Biglietto Standard";
 
-}else{ costo_output.innerHTML= prezzo;
+}else{ costo_output.innerHTML= prezzo + "€";
 }
 
 }
