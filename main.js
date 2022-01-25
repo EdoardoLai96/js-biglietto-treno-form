@@ -42,11 +42,17 @@ let prezzo = (chilometri.value * 0.21).toFixed(2);
 
 
 
-if (eta.value="Minorenne"){
+if (eta.value == "Biglietto Standard"){
+    alert("Attenzione! selezionare almeno un'opzione");
+    document.getElementById("prova").classList.add("d-none");
+
+}
+
+else if (eta.value == "Minorenne"){
     costo_output.innerHTML = (prezzo * 0.8).toFixed(2) ;
     eta.value = "Biglietto Standard";
 
-} else if (eta.value ="65+") {
+} else if (eta.value == "65+") {
     costo_output.innerHTML = (prezzo * 0.6).toFixed(2) ;
     eta.value = "Biglietto Standard";
 
